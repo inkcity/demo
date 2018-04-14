@@ -32,16 +32,15 @@
 	<!-- aop -->
 	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
 	<!-- 静态资源映射，包括angular -->
-	<mvc:resources mapping="/angular/**" location="/WEB-INF/angular/" />
-	<mvc:resources mapping="/html/**" location="/WEB-INF/html/login/" />
-	<mvc:resources mapping="/bootstrap3/css/**" location="/WEB-INF/html/bootstrap3/css/" />
-	<mvc:resources mapping="/bootstrap3/js/**" location="/WEB-INF/html/bootstrap3/js/" />
+	<mvc:resources mapping="/index.html" location="/WEB-INF/index.html" />
+	<mvc:resources mapping="/bootstrap3/css/**" location="/WEB-INF/bootstrap3/css/" />
+	<mvc:resources mapping="/bootstrap3/js/**" location="/WEB-INF/bootstrap3/js/" />
 	<!-- 跨域 -->
 	<mvc:cors>
 		<mvc:mapping path="/**" />
 	</mvc:cors>
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/html/loginResponse/" />
+		<property name="prefix" value="/WEB-INF/loginResponse/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
 
