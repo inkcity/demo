@@ -35,6 +35,8 @@
 	<mvc:resources mapping="/index.html" location="/WEB-INF/index.html" />
 	<mvc:resources mapping="/bootstrap3/css/**" location="/WEB-INF/bootstrap3/css/" />
 	<mvc:resources mapping="/bootstrap3/js/**" location="/WEB-INF/bootstrap3/js/" />
+	<mvc:resources mapping="/vue/**" location="/WEB-INF/vue/" />
+	<mvc:resources mapping="/login/**" location="/WEB-INF/login/" />
 	<!-- 跨域 -->
 	<mvc:cors>
 		<mvc:mapping path="/**" />
